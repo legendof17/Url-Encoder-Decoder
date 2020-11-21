@@ -1,7 +1,11 @@
+@font-face {
+  font-family: nerk;
+  src: url(NerkoOne-Regular.ttf);
+}
 body,h1 {font-family: "Raleway", sans-serif}
     body, html {height: 100%}
     .bgimg {
-      background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+      background-image: url('https://pixabay.com/get/53e4d1424852ad14f6d1867dda353678153ad7e351597249_1920.jpg');
       min-height: 100%;
       background-position: center;
       background-size: cover;
@@ -19,18 +23,20 @@ body,h1 {font-family: "Raleway", sans-serif}
       font-size: 16px;
       margin: 40px 2px;
       border-radius: 12px;
-      outline: none;
       width: 100%;
-      transition: 0.3s;
+      height: auto;
+      transition: 1s;
     }
     .text:hover {
       font-size: 20px;
+      height: 50px;
+      transition: 1s;
     }
     .button1 {
       background-color: #ddd;
       border: none;
       color: rgb(82, 78, 78);
-      padding: 20px;
+      padding: 10px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
@@ -39,18 +45,19 @@ body,h1 {font-family: "Raleway", sans-serif}
       cursor: pointer;
       border-radius: 12px;
       margin-right: 10%;
+      outline: none;
       transition: 0.3s;
     }
     .button1:hover {
       background-color: #923434;
-      color: white;
+      color: black;
       font-size: 20px;
     }
     .button2 {
       background-color: #ddd;
       border: none;
       color: rgb(82, 78, 78);
-      padding: 20px;
+      padding: 10px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
@@ -59,10 +66,32 @@ body,h1 {font-family: "Raleway", sans-serif}
       cursor: pointer;
       border-radius: 12px;
       margin-left: 10%;
+      outline: none;
       transition: 0.3s;
     }
     .button2:hover {
       background-color: #3e8e41;
-      color: white;
+      color: black;
       font-size: 20px;
+    }
+    .arrow-down {
+      transform: rotate(180deg);
+    }
+    .glow {
+      font-family: nerk;
+      color: rgb(247, 136, 136);
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+    
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+      }
+      
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }
     }
