@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/animation.css">
     <body>
 
         <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
@@ -14,18 +14,21 @@
             <h1 class="glow"><a href="/" style="text-decoration:none">UED</a></h1>
         </div>
         <div class="w3-display-middle">
+            <form onsubmit="return false;">
             <center><h1 class="w3-animate-top url-enc">URL-ENCODER-DECODER</h1>
             <hr class="w3-border-grey" style="margin:auto">
-            <input type="text" class="text" placeholder="Type the Url / String"><br>
-            <button type="submit" class="button1" onclick="alert()">
+            <input type="text" class="text" placeholder="Type the Url / String" id="rawstring"><br>
+            <button type="submit" class="button1" onclick="encode()">
                 Encode
-                <img src="css/arrow.svg" width="20">
+                <img src="../assets/arrow.svg" width="20">
             </button>
-            <button type="submit" class="button2" onclick="alert()">
-                <img src="css/arrow.svg" width="20" class="arrow-down">
+            <button type="submit" class="button2" onclick="decode()">
+                <img src="../assets/arrow.svg" width="20" class="arrow-down">
                 Decode
             </button>
-        </center>
+            </center>
+            </form>
+            <script src="js/engine.js"></script>
         </div>
         </div>
     </body>
