@@ -6,5 +6,6 @@ function encode() {
 function decode() {
 	var obj = document.getElementById('rawstring');
     var encoded = obj.value;
+    encoded = decodeURIComponent(encoded.replace("https://mylink.cx/?url=",  ""));
 	obj.value = decodeURIComponent(encoded.replace(/\+/g,  " "));
 }

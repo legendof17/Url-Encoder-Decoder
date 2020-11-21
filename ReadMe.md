@@ -21,13 +21,12 @@ https://www.example.com/redirected?=https://www.google.com/
 ```
 **or**
 ```
-https://www.example.com/redirected?=
+https://www.google.com/
 ```
 ***
 ## **FEATURES**
 * Fastest way to decode torrent's magnet link.
 * Get rid of annoying ads redirection with one click.
 * Make your own salted messages or urls.
-
-#
+***
 ## More Coming Soon..!
